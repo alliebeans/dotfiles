@@ -1,0 +1,70 @@
+#----------------------------------------------------------------------------------
+# Format parameters:
+#
+#   %a - appname
+#   %s - summary
+#   %b - body
+#   %i - iconname (including its path)
+#   %I - iconname (without its path)
+#   %p - progress value if set ([  0%] to [100%]) or nothing
+#----------------------------------------------------------------------------------
+
+[global]
+monitor = 0
+follow = none
+geometry = "0x1-59+39"
+indicate_hidden = true
+shrink = false
+transparency = 42
+notification_height = 0
+separator_height = 2
+padding = 8
+horizontal_padding = 8
+frame_width = 0
+frame_color = "#222223"
+sort = true
+idle_threshold = 0
+font = Clear Sans Regular 13
+line_height = 4
+markup = full
+format = "<b>%s</b>\n%b"
+alignment = left
+vertical_alignment = center
+show_age_threshold = -1
+word_wrap = true
+ignore_newline = false
+stack_duplicates = true
+hide_duplicates_count = false
+show_indicators = true
+icon_position = left
+min_icon_size = 0
+max_icon_size = 16
+icon_path = "~/.icons/Boston_cardboard/16/actions/:~/.icons/Boston_cardboard/16/apps/:~/.icons/Boston_cardboard/16/devices/:~/.icons/Boston_cardboard/16/mimes/:~/.icons/Boston_cardboard/16/places/:~/.icons/Boston_cardboard/16/status/"
+sticky_history = false
+history_length = 24
+dmenu = "/usr/bin/dmenu"
+browser = "/usr/bin/firefox-esr"
+always_run_script = false
+title = "Dunst"
+class = "Dunst"
+startup_notification = false
+verbosity = 'mesg'
+force_xinerama = false
+corner_radius = 3
+mouse_left = close_current
+mouse_right = close_all
+
+[urgency_low]
+background = "#222223"
+foreground = "#f8f8f8"
+frame_color = "#222223"
+
+[urgency_normal]
+background = "#222223"
+foreground = "#f8f8f8"
+frame_color = "#222223"
+
+[urgency_critical]
+background = "#222223"
+foreground = "#ffffb3"
+frame_color = "#fab387"

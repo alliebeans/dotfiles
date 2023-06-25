@@ -1,0 +1,290 @@
+{
+    "workbench.colorTheme": "Greyboard",
+    "workbench.colorCustomizations": {
+        "menu.background": "#222223",
+        "badge.background": "#222223",
+        "input.background": "#222223",
+        "panel.background": "#222223",
+        "banner.background": "#222223",
+        "editor.background": "#222223",
+        "minimap.background": "#222223",
+        "sideBar.background": "#222223",
+        "dropdown.background": "#222223",
+        "list.dropBackground": "#222223",
+        "terminal.background": "#222223",
+        "statusBar.background": "#222223",
+        "editorInfo.background": "#222223",
+        "editorPane.background": "#222223",
+        "quickInput.background": "#222223",
+        "activityBar.background": "#222223",
+        "progressBar.background": "#222223",
+        "debugToolBar.background": "#222223",
+        "welcomePage.background": "#222223",
+        "editorWidget.background": "#222223",
+        "editorGutter.background": "#222223",
+        "commandCenter.background": "#222223",
+        "minimapSlider.background": "#222223",
+        "peekViewEditor.background": "#222223",
+        "peekViewResult.background": "#222223",
+    },
+    "editor.tokenColorCustomizations": {
+        "[Greyboard]":
+        {
+            
+            "textMateRules": [
+                {
+                    "name": "Name type",
+                    "scope": [
+                        "entity.name.type.class"
+                    ],
+                    "settings": {
+                        "foreground": "#fff700",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Function",
+                    "scope": [
+                        "entity.name.function"
+                    ],
+                    "settings": {
+                        "foreground": "#dedbdb",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword other",
+                    "scope": [
+                        "keyword.other"
+                    ],
+                    "settings": {
+                        "foreground": "#fe8b3e",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword other",
+                    "scope": [
+                        "keyword.type"
+                    ],
+                    "settings": {
+                        "foreground": "#fe8b3e",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword other",
+                    "scope": [
+                        "keyword.control",
+                    ],
+                    "settings": {
+                        "foreground": "#fe8b3e",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword operator",
+                    "scope": [
+                        "keyword.operator",
+                    ],
+                    "settings": {
+                        "foreground": "#fe8b3e",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword control",
+                    "scope": [
+                        "keyword.control",
+                    ],
+                    "settings": {
+                        "foreground": "#f14fb3",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword switch",
+                    "scope": [
+                        "keyword.control.switch",
+                    ],
+                    "settings": {
+                        "foreground": "#f14fb3",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword conditional",
+                    "scope": [
+                        "keyword.control.conditional",
+                    ],
+                    "settings": {
+                        "foreground": "#f14fb3",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Keyword return",
+                    "scope": [
+                        "keyword.control.flow",
+                    ],
+                    "settings": {
+                        "foreground": "#a33378",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Property",
+                    "scope": [
+                        "variable.other.object.property"
+                    ],
+                    "settings": {
+                        "foreground": "#a1a1a1",
+                        "fontStyle": "bold"
+                    }
+                },
+                
+                {
+                    "name": "Other using",
+                    "scope": [
+                        "keyword.other.using"
+                    ],
+                    "settings": {
+                        "foreground": "#757575",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Storage",
+                    "scope": [
+                        "storage.modifier"
+                    ],
+                    "settings": {
+                        "foreground": "#757575",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Variable",
+                    "scope": [
+                        "entity.name.variable"
+                    ],
+                    "settings": {
+                        "foreground": "#00aeff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Variable",
+                    "scope": [
+                        "entity.name.type"
+                    ],
+                    "settings": {
+                        "foreground": "#00aeff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Variable",
+                    "scope": [
+                        "variable.other.object"
+                    ],
+                    "settings": {
+                        "foreground": "#00aeff",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Variable",
+                    "scope": [
+                        "variable.other"
+                    ],
+                    "settings": {
+                        "foreground": "#82dce8",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Punctuation",
+                    "scope": [
+                        "punctuation"
+                    ],
+                    "settings": {
+                        "foreground": "#156c6f"
+                    }
+                },
+                {
+                    "name": "Punctuation parenthesis",
+                    "scope": [
+                        "punctuation.parenthesis"
+                    ],
+                    "settings": {
+                        "foreground": "#156c6f"
+                    }
+                },
+                {
+                    "name": "Comment",
+                    "scope": [
+                        "comment"
+                    ],
+                    "settings": {
+                        "foreground": "#5e5e5e"
+                    }
+                },
+                {
+                    "name": "Comment punctuation",
+                    "scope": [
+                        "punctuation.definition.comment"
+                    ],
+                    "settings": {
+                        "foreground": "#5e5e5e"
+                    }
+                },
+                // #######
+                {
+                    "name": "Constant numeric",
+                    "scope": [
+                        "constant.numeric"
+                    ],
+                    "settings": {
+                        "foreground": "#dc88ce",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "String",
+                    "scope": [
+                        "string"
+                    ],
+                    "settings": {
+                        "foreground": "#f7f6b0"
+                    }
+                },
+                {
+                    "name": "Boolean expression - constant language",
+                    "scope": [
+                        "constant.language"
+                    ],
+                    "settings": {
+                        "foreground": "#051df4",
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+        }
+    },
+    "workbench.startupEditor": "none",
+    "window.menuBarVisibility": "toggle",
+    "git.autofetch": true,
+    "editor.rulers": [
+    
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "files.autoSave": "onFocusChange",
+    "csharpextensions.privateMemberPrefix": "_",
+    "csharpextensions.useThisForCtorAssignments": false,
+    "window.zoomLevel": 1,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDragAndDrop": false
+}
