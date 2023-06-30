@@ -1,0 +1,9 @@
+[Default Applications]
+text/css=code.desktop
+text/html=code.desktop
+text/x-javascript=code.desktop
+text/xml=code.desktop
+text/plain=mousepad.desktop
+text/markdown=mousepad.desktop
+application/pdf=org.gnome.Evince.desktop
+application/javascript=code.desktop
