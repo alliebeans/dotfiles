@@ -1,0 +1,346 @@
+@define-color bg #222223;
+@define-color bg-darker #121212;
+@define-color fg #f8f8f8;
+@define-color accent #55ffff;
+@define-color warning #ffff55;
+
+/* the panel widget at the top */
+#panel_window {
+  background-color: transparent;
+  color: @fg;
+  font-size: 13px;
+}
+
+#panel_window menubar {
+  padding: 4px 12px 4px 12px;
+}
+
+/* the menubars/menus of the panel, i.e. indicators */
+#panel_window .menubar,
+#panel_window .menubar > .menuitem {
+  background-color: transparent;
+  color: @fg;
+  font-weight: normal;
+  padding: 4px 8px;
+}
+
+#panel_window .menubar .menuitem:insensitive {
+  color: alpha(@fg, 0.7);
+}
+
+#panel_window .menubar .menu {
+  margin: 4px;
+  padding: 0;
+  border-radius: 3px;
+  background-color: @bg;
+  border: 1px solid @bg-darker;
+}
+
+#panel_window .menubar .menu .menuitem {
+  min-height: 16px;
+  min-width: 40px;
+  padding: 5px;
+}
+
+/* the login window */
+#login_window,
+#shutdown_dialog,
+#restart_dialog {
+  background-color: transparent;
+  color: @fg;
+}
+
+/* the top half of the login-window, in GtkDialog terms, the content */
+#content_frame {
+  
+}
+
+/* the user-combobox */
+#login_window .menu {
+  background-color: transparent;
+}
+
+#login_window GtkComboBox .button,
+#login_window GtkComboBox .button:hover,
+#login_window GtkComboBox .button:active,
+#login_window GtkComboBox .button:active:hover,
+#login_window GtkComboBox .button:focus,
+#login_window GtkComboBox .button:hover:focus,
+#login_window GtkComboBox .button:active:focus,
+#login_window GtkComboBox .button:active:hover:focus {
+  background-color: transparent;
+  color: @accent;
+}
+
+#login_window GtkComboBox .button:focus,
+#login_window GtkComboBox .button:hover:focus,
+#login_window GtkComboBox .button:active:focus,
+#login_window GtkComboBox .button:active:hover:focus {
+  background-color: transparent;
+  color: @accent;
+}
+
+#login_window #user_combobox {
+  background-color: @bg;
+}
+
+#login_window #user_combobox .menu {
+  font-weight: normal;
+  background-color: @bg;
+  margin: 4px;
+  padding: 0;
+  border-radius: 3px;
+  background-color: @bg;
+  border: 1px solid @bg-darker;
+  color: @fg;
+}
+
+#login_window #user_combobox .arrow {
+  color: @accent;
+}
+
+/* the entries, one for the username, one for the password */
+#login_window .entry {
+  background-color: transparent;
+  color: @fg;
+  font-size: 13px;
+}
+
+#login_window .entry:focus,
+#login_window .entry:hover {
+  border-color: shade(@fg, 0.7);
+
+  box-shadow: inset 1px 0 alpha(@fg, 0.10),
+              inset 0 1px alpha(@fg, 0.12),
+              inset -1px 0 alpha(@fg, 0.10);
+}
+
+/* the buttons, alternatively this could also be done with a simple ".lightdm-gtk-greeter .button" */
+
+/* the lower half of the login-window, in GtkDialog terms the buttonbox or action area */
+#buttonbox_frame {
+  background-color: transparent;
+}
+
+button {
+  min-height: 22px;
+  min-width: 20px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-color: transparent;  
+  color: @accent;
+  background-color: transparent;
+}
+button:backdrop {
+  color: rgba(248, 248, 248, 0.67);
+}
+button separator {
+  margin: 4px 1px;
+}
+button.text-button {
+  padding-left: 12px;
+  padding-right: 12px;
+
+  border: 1px solid;
+  border-radius: 3px;
+  color: #f8f8f8;
+  border-color: #121212;
+  background-color: #262627;
+}
+button:hover {
+  color: #f8f8f8;
+  border-color: #121212;
+  background-color: #2c2c2c;
+  -gtk-icon-effect: highlight;
+}
+button:active, button:checked {
+  color: #ffffff;
+  border-color: #121212;
+  background-color: #3f3f41;
+  background-clip: padding-box;
+  transition-duration: 50ms;
+}
+button:active:backdrop, button:checked:backdrop {
+  color: rgba(255, 255, 255, 0.67);
+}
+button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
+  color: inherit;
+  opacity: 0.6;
+}
+button:active {
+  color: #f8f8f8;
+}
+button:active:hover, button:checked {
+  color: #ffffff;
+}
+
+
+
+/* 
+button.flat {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  transition: none;
+}
+button.flat:hover {
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 350ms;
+}
+button.flat:hover:active {
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+button.sidebar-button {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  transition: none;
+}
+button.sidebar-button:hover {
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 350ms;
+}
+button.sidebar-button:hover:active {
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button:hover {
+  color: #f8f8f8;
+  border-color: #121212;
+  background-color: #2c2c2c;
+  -gtk-icon-effect: highlight;
+}
+button:active, button:checked {
+  color: #ffffff;
+  border-color: #121212;
+  background-color: #3f3f41;
+  background-clip: padding-box;
+  transition-duration: 50ms;
+}
+button:active:backdrop, button:checked:backdrop {
+  color: rgba(255, 255, 255, 0.67);
+}
+button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
+  color: inherit;
+  opacity: 0.6;
+}
+button:active {
+  color: #f8f8f8;
+}
+button:active:hover, button:checked {
+  color: #ffffff;
+}
+button.flat:disabled {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+}
+button:disabled {
+  border-color: transparent;
+  background-color: transparent;
+}
+button:disabled label, button:disabled {
+  color: rgba(248, 248, 248, 0.45);
+}
+button:disabled:active, button:disabled:checked {
+  border-color: transparent;
+  background-color: transparent;
+  opacity: 0.6;
+}
+button:disabled:active label, button:disabled:active, button:disabled:checked label, button:disabled:checked {
+  color: rgba(255, 255, 255, 0.8);
+} */
+
+
+/* #login_window .button,
+#shutdown_dialog .button,
+#restart_dialog .button {
+  padding: 3px 15px;
+  transition: all 150ms ease-out;
+} */
+
+
+
+/* the buttons that have focus by default in each window */
+/* #login_window .button.default,
+#shutdown_dialog .button.default,
+#restart_dialog .button.default,
+#login_window .button:focus,
+#login_window .button:active:focus,
+#shutdown_dialog .button:focus,
+#shutdown_dialog .button:active:focus,
+#restart_dialog .button:focus,
+#restart_dialog .button:active:focus {
+  border-color: shade(@theme_selected_bg_color, 0.8);
+  background-image: linear-gradient(to bottom,
+                                    shade(@theme_selected_bg_color, 1.02),
+                                    shade(@theme_selected_bg_color, 0.95) 90%,
+                                    shade(@theme_selected_bg_color, 0.90)
+                                    );
+
+  color: @theme_selected_fg_color;
+}
+
+#login_window .button.default:hover,
+#shutdown_dialog .button.default:hover,
+#restart_dialog .button.default:hover,
+#login_window .button:hover:focus,
+#login_window .button:active:hover:focus,
+#shutdown_dialog .button:hover:focus,
+#shutdown_dialog .button:active:hover:focus,
+#restart_dialog .button:hover:focus,
+#restart_dialog .button:active:hover:focus {
+  border-color: shade(@theme_selected_bg_color, 0.7);
+  background-image: linear-gradient(to bottom,
+                                    shade(@theme_selected_bg_color, 1.12),
+                                    shade(@theme_selected_bg_color, 1.05) 90%,
+                                    shade(@theme_selected_bg_color, 1.00)
+                                    );
+}
+
+the shutdown button
+#shutdown_button.button {
+  border-color: shade(@error_bg_color, 0.8);
+  background-image: linear-gradient(to bottom,
+                                    shade(@error_bg_color, 1.02),
+                                    shade(@error_bg_color, 0.95) 90%,
+                                    shade(@error_bg_color, 0.90)
+                                    );
+
+  color: @error_fg_color;
+}
+
+#shutdown_button.button:hover,
+#shutdown_button.button:active,
+#shutdown_button.button:active:hover {
+  border-color: shade(@error_bg_color, 0.7);
+  background-image: linear-gradient(to bottom,
+                                    shade(@error_bg_color, 1.12),
+                                    shade(@error_bg_color, 1.05) 90%,
+                                    shade(@error_bg_color, 1.00)
+                                    );
+}
+
+the restart button
+#restart_button.button {
+  border-color: shade(@warning_bg_color, 0.8);
+  background-image: linear-gradient(to bottom,
+                                    shade(@warning_bg_color, 1.02),
+                                    shade(@warning_bg_color, 0.95) 90%,
+                                    shade(@warning_bg_color, 0.90)
+                                    );
+
+  color: @warning_fg_color;
+}
+
+#restart_button.button:hover,
+#restart_button.button:active,
+#restart_button.button:active:hover {
+  
+} */
+
+/* the warning, in case a wrong password is entered or something else goes wrong according to PAM */
+#greeter_infobar {
+  font-weight: bold;
+  transform: translateY(-4px);
+  color: @warning;
+}

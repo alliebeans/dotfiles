@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=cloudy-alliebeans-gray
+Type=X-GNOME-Metatheme
+Comment=Alliebeans Gtk Gray Theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=cloudy-alliebeans-gray
+IconTheme=Boston_cardboard
+CursorTheme=Adwaita
+CursorSize=24

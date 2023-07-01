@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=alliebeans-lightdm-greeter
+Type=X-GNOME-Metatheme
+Comment=Alliebeans Gtk LightDM Theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=alliebeans-lightdm-greeter
+IconTheme=Boston_cardboard
+CursorTheme=Adwaita
+CursorSize=24
