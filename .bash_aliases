@@ -23,5 +23,5 @@ alias upgrade="sudo apt update && sudo apt upgrade"
 alias upgradable="apt list --upgradable"
 
 # dotfiles
-alias cpdotfiles="rsync --files-from=/home/alliebeans/dotfiles /home/alliebeans/ /home/alliebeans/Public/dotfiles/"
-alias cpdotconfig="rsync --files-from=/home/alliebeans/.config/dotconfig /home/alliebeans/.config/ /home/alliebeans/Public/dotfiles/dotconfig/"
+alias cpdotfiles="rsync -r --files-from=/home/alliebeans/dotfiles /home/alliebeans/ /home/alliebeans/Public/dotfiles/"
+alias cpdotconfig="rsync -r --files-from=/home/alliebeans/.config/dotconfig /home/alliebeans/.config/ /home/alliebeans/Public/dotfiles/dotconfig/"
